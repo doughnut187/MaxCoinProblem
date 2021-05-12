@@ -1,5 +1,4 @@
 '''
-CIS 313 Spring 2021 Assignment 5
 Author: Thomas Joyce
 Description: Takes a list of coin denominations and target values from stdin
              and writes the max number of coins which can be used to make the
@@ -25,10 +24,9 @@ from math import inf
 
 def maxCoins(coins, value, memo):    
     '''
-    Description: 
-    Complexity: 
-    Inputs: list[int], int
-    Outputs: int
+    Description: fills the 2d array memo with each values max coin solution.
+    Inputs: list[int], int, list[list[int]]
+    Outputs: list[list[int]]
     '''
     for i in range(len(coins) + 1):
         for w in range(value + 1):
